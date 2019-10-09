@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CNN-News</title>
+<!-- Main Style -->
+<link href="css/all.min.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href ="css/owl.theme.green.min.css" rel ="stylesheet">
+<link href="css/owl.theme.default.min.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-nav">
+      <div class="col-left">
+        <div class="logo"> <img src="images/logo.png" alt=""> </div>
+        <div class="home-mobile"> <a href="#">Home</a> </div>
+        <div class="menu">
+          <ul>
+           <li><a href="">US</a></li>
+            <li><a href="">World</a></li>
+            <li><a href="">Politics</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="https://www.cnn.com/opinions">Opinion</a></li>
+            <li><a href="https://www.cnn.com/health">Health</a></li>            
+            <li><a href="https://www.cnn.com/entertainment">Entertainment</a></li>
+            <li><a href="">Style</a></li>
+            <li><a href="">Sport</a></li>
+            <li><a href="">Travel</a></li>                       
+            <li><a href="">Video</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-right">
+        <ul>
+          <li class= "livebtn"><button class="Livebtn" onclick="window.location.href = 'https://go.cnn.com/?stream=cnn%3Fsr';">Live News <i class="fa fa-circle" aria-hidden="true"></i></button></li>
+          <li class="toggle-frm"><a href="#">U.S. Edition <span> <i class="fa fa-plus" aria-hidden="true"></i></i></i> </span></a>
+            <div class="edition-bx">
+              <div class="country-listing">
+                <ul>
+                  <li><a href="">U.S.</a></li>
+                  <li><a href="">Arabic</a></li>
+                  <li><a href="">Español</a></li>
+                </ul>
+              </div>
+              <div class="form-edition">
+                <p>Set edition preference:</p>
+                <div class="form-group">
+                  <form>
+                    <ul>
+                      <li>
+                        <label class="radio-button">
+                          <input type="radio" checked="checked" name="radio">
+                          <span class="checkmark">U.S.</span> </label>
+                      </li>
+                      <li>
+                        <label class="radio-button">
+                          <input type="radio" name="radio">
+                          <span class="checkmark">International</span> </label>
+                      </li>
+                    </ul>
+                    <button class="btn-submit">Confirm</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="toggle-search"><a href="#"> <i class="fa fa-search" aria-hidden="true"></i> </a> </li>
+          <li class="toggle-bars"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <!-- nav-search bar -->
+      <div class="top-search">
+        <form>
+          <div class="search-group">
+            <input class="search-input-field" type="text" placeholder="Search CNN...">
+            <button class="search-submit" type="submit">Search &raquo;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="nav-menu">
+    <div class="container">
+      <div class="mob-edition">
+        <ul>
+          <li class="tgmobile"><a href="#">U.S. Edition <span> <i class="fa fa-plus"></i> </span></a>
+            <div class="edition-bx">
+              <div class="country-listing">
+                <ul>
+                  <li><a href="">International</a></li>
+                  <li><a href="">Arabic</a></li>s
+                  <li><a href="">Español</a></li>
+                </ul>
+              </div>
+              <div class="form-edition">
+                <p>Set edition preference:</p>
+                <div class="form-group">
+                  <form>
+                    <ul>
+                      <li>
+                        <label class="radio-button">
+                          <input type="radio" checked="checked" name="radio">
+                          <span class="checkmark">U.S.</span> </label>
+                      </li>
+                      <li>
+                        <label class="radio-button">
+                          <input type="radio" name="radio">
+                          <span class="checkmark">International</span> </label>
+                      </li>
+                    </ul>
+                    <button class="btn-submit">Confirm</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="navigation">
+        <div class="nav-item">
+          <h3><a href="">US</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">World</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">Politics</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">Business</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">Opinion</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">entertainment</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">Tech</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">Sport</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="w-full-col"></div>
+        <div class="nav-item">
+          <h3><a href="">travel</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">style</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href=""><img src="images/menu_health.png" class="nav-menu__img-health" style="width: 70px;" data-demand-load="loaded"></a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">Coupens</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+         <div class="nav-item">
+          <h3><a href=""><img src="images/menu_bleacher.png" class="nav-menu__img-bleacher" style="width: 81.85px;" data-demand-load="loaded"></a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">video</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <h3><a href="">more...</a></h3>
+          <ul class="nav-submenu">
+            <li ><a href="">US</a></li>
+            <li ><a  href="">Africa</a></li>
+            <li ><a  href="">Americas</a></li>
+            <li ><a  href="">Asia</a></li>
+            <li ><a href="">Australia</a></li>
+            <li ><a  href="">China</a></li>
+            <li ><a  href="">Europe</a></li>
+            <li ><a  href="">Middle East</a></li>
+            <li ><a  href="">India</a></li>
+            <li ><a href="">UK</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>    
+    <div class="set-edition">
+      <div class="container">
+        <div class="edition-blok">
+          <div class="contrary">
+            <ul>
+              <li class="cnt-logo"><a href=""><img src="images/logo.png" alt="">U.S.</a></li>
+              <li class="cnt-logo"><a href=""><img src="images/logo.png" alt="">Español</a></li>
+              <li class="espanol"><a href=""><img src="images/logo_cnn_arabic.png" alt="">Arabic</a></li>
+            </ul>
+          </div>
+          <div class="form-single">
+            <ul>
+              <li>
+                <p>Set edition preference:</p>
+              </li>
+              <li>
+                <label class="radio-button">
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark">U.S.</span> </label>
+              </li>
+              <li>
+                <label class="radio-button">
+                  <input type="radio" name="radio">
+                  <span class="checkmark">International</span> </label>
+              </li>
+              <li>
+                <button class="btn-submit">Confirm</button>
+              </li>
+            </ul>
+          </div>
+          <div class="social-menu">
+            <ul class="social-links">
+              <li><a href=""><i class="fa fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--End header-->
+
+<main class="middle-contant">
+<!-- News article section -->
+  <section class="News-article">
+    <div class="container">
+      <div class="news-article-inner">
+        <div class="column colm-first">
+          <div class="box-article">
+            <article>
+              <h2><a href="">Saudi Arabia wants to execute another teen</a></h2>
+              <div class="media-img"> <img src="images/murtaja-qureiris-teaser-large-tease.jpeg" alt=""> </div>
+              <div class="headline"> <a href=""><strong>He was thought to have been Saudi's youngest known political prisoner. At 18, he faces the death penalty</strong></a> </div>
+              <div class="list-headline">
+                <ul>
+                  <li><a href="">Teen has been detained for almost four years</a></li>
+                  <li><a href="">US intel: Saudi's missile program got help from China</a></li>
+                  <li><a href="">Initial findings on Gulf tanker attacks point to a 'state actor'</a></li>
+                  <li><a href="">US officials: Tensions with Iran easing but they remain 'vigilant'</a></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box-article">
+            <article>
+              <div class="page-title">
+                <p>Top stories</p>
+              </div>
+              <div class="media-img"> <img src="images/alex-morgan-carli-lloyd-medium-tease.jpg" alt=""> </div>
+              <div class="headline"> <a href=""><strong>He was thought to have been Saudi's youngest known political prisoner. At 18, he faces the death penalty</strong></a> </div>
+              <div class="list-headline">
+                <ul>
+                  <li><a href="">Teen has been detained for almost four years</a></li>
+                  <li><a href="">US intel: Saudi's missile program got help from China</a></li>
+                  <li><a href="">Initial findings on Gulf tanker attacks point to a 'state actor'</a></li>
+                  <li><a href="">US officials: Tensions with Iran easing but they remain 'vigilant'</a></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="column ">
+          <div class="box-article">
+            <article>
+              <div class="media-img"> <img src="images/restricted-medium-tease.jpg" alt=""> </div>
+              <div class="headline"> <a href=""><strong>Why wasn't Putin invited to D-Day event?</strong></a> </div>
+              <div class="list-headline">
+                <ul>
+                  <li><a href="">Best lines from Trump's Normandy interview</a></li>
+                  <li><a href="">Johnson wins challenge over 'Brexit lies'</a></li>
+                  <li><a href="">'King of Clay' reigns supreme over Federer</a></li>
+                  <li><a href="">17 killed in Dubai after bus hits road sign</a></li>
+                  <li><a href="">17 killed in Dubai after bus hits road sign</a></li>
+                  <li><a href="">Grisly find inside 1,000-year-old sarcophagus</a></li>
+                  <li><a href="">Nike 'concerned' by Neymar rape allegations</a></li>
+                  <li><a href="">Analysis: A world divided by 5G</a></li>
+                  <li><a href="">May's days ending but Brexit fantasy lives on</a></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- around content section -->
+  <section class="around-content-block">
+    <div class="container">
+      <div class="content-block">
+        <div class="box-media-list">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Top stories</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/trump.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> DJ Rosenthal:  The silver lining to Trump's incompetence</strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">Teen has been detained for almost four years</a></li>
+              <li><a href="">US intel: Saudi's missile program got help from China</a></li>
+              <li><a href="">Initial findings on Gulf tanker attacks point to a 'state actor'</a></li>
+              <li><a href="">US officials: Tensions with Iran easing but they remain 'vigilant'</a></li>
+            </ul>
+          </div>
+          <div class="most-popular">
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/cnn-trump-img-1.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#"><strong>Michael D'Antonio:</strong> Playing by Trump's rules good news for Biden</a> </div>
+            </div>
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/cnn-trump-img-2.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#"><strong>Stephen Pope:</strong> Don't leap to conclusions about helicopter safety</a> </div>
+            </div>
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/cnn-trump-img-3.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#"><strong>Dean Obeidallah:</strong> Alec Baldwin's 'SNL' departure is a win for Trump</a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-media-list box-media-mid">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Women's World Cup</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/chile-women-celebrate-large-tease.jpg" alt="">
+            <div class="headline cd-headline-text"> <a href=""><strong> DJ Rosenthal:  The silver lining to Trump's incompetence</strong></a> </div>
+          </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">Teen has been detained for almost four years</a></li>
+              <li><a href="">US intel: Saudi's missile program got help from China</a></li>
+              <li><a href="">Initial findings on Gulf tanker attacks point to a 'state actor'</a></li>
+              <li><a href="">US officials: Tensions with Iran easing but they remain 'vigilant'</a></li>
+            </ul>
+          </div>
+          <div class="most-popular">
+            <div class="most-popular-blok wcd d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/formiga-brazil-football-small-tease.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#">The 41-year-old breaking records at the Women's World Cup</a> </div>
+            </div>
+            <div class="most-popular-blok wcd d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/endler-tease-small-tease.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#">The goalkeeper opening doors for other women</a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-media-list ">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Take a closer look</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/cher-bob-mackie-tease-medium-tease.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> The 'Sultan of Sequins' behind Cher's most provocative looks</strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">Almost 600 plant species have become extinct in the last 250 years</a></li>
+              <li><a href="">Clinton offers rare glimpse inside her family home</a></li>
+              <li><a href="">The power behind Marc Marquez's MotoGP throne</a></li>
+            </ul>
+          </div>
+          <div class="most-popular">
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/acacia-tree-small-11.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#">Almost 600 plant species have become extinct in the last 250 years</a> </div>
+            </div>
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/hillary-clinton-architectural-digest-no-watermark-small-11.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#">Clinton offers rare glimpse inside her family home</a> </div>
+            </div>
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/santi-hernandez-hero-gfx-small-11.jpg" alt=""></a> </div>
+              <div class="media-cont"> <a href="#">The power behind Marc Marquez's MotoGP throne</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Featured section -->
+  <section class="Featured-Sections">
+    <div class="container">
+      <div class="title-header">
+        <h2>Featured Sections</h2>
+      </div>
+      <div class="content-block Featured-sec">
+        <div class="box-media-list">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>CNN Business</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/huawei-p30-large-tease.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> Huawei will have to wait to become world's biggest smartphone brand </strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">America's oil boom will break more records this year. OPEC is stuck in retreat</a></li>
+              <li><a href="">This online grocer is backing Europe's biggest vertical farm</a></li>
+              <li><a href="">Should AI be used to catch shoplifters? </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-media-list">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Travel</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/26-earth-beautiful-places-large-tease.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> The world's most beautiful places </strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">Could these waters be the new Caribbean?</a></li>
+              <li><a href="">The perfect island where horses play in the surf</a></li>
+              <li><a href="">This plane flew on D-Day. Now it's back in the air</a></li>
+              <li><a href="">What's for breakfast in 21 different nations</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-media-list">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Sport</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/nba-finals-tease-large-tease.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> How the Splash Brothers kept the NBA Finals alive</strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">World's first flying taxi is coming to the sky near you soon</a></li>
+              <li><a href="">The South American footballers fighting for change</a></li>
+              <li><a href="">From nuclear disaster to world champions</a></li>
+              <li><a href="">The match that changed women's football</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full-col"></div>
+        <div class="box-media-list">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Style</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/infinity-pool-london-intl-scli-large-tease.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> 'World's first' 360-degree infinity pool</strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">Rare photos show reality of D-Day</a></li>
+              <li><a href="">Striking infrared photos retell the horror of D-Day</a></li>
+              <li><a href="">Clinton offers rare glimpse into her home </a></li>
+              <li><a href="">Miss India photo stirs debate on social media </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-media-list">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Helth</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/08-seahorses-restricted-large-tease.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> Used as 'natural Viagra,' seahorse numbers are declining</strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">Brain tumor symptoms turned out to be tapeworm </a></li>
+              <li><a href="">It might take 2 more years to contain Ebola outbreak</a></li>
+              <li><a href="">The two groups that reach the peak of human endurance</a></li>
+              <li><a href="">One million STDs diagnosed every day</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-media-list">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Tech</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-img"> <img src="images/xbox-console-announcement-large-tease.jpg" alt=""> </div>
+          <div class="headline cd-headline-text"> <a href=""><strong> Microsoft announces new Xbox console </strong></a> </div>
+          <div class="list-headline">
+            <ul>
+              <li><a href="">People are sick of drinking. Investors are betting on the 'sober curious'</a></li>
+              <li><a href="">FedEx dumps Amazon from air cargo service as rivalry grows</a></li>
+              <li><a href="">Your phone carrier can now block robocalls by default</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 'Videos section' -->
+  <section class="watch-it">
+    <div class="container">
+      <div class="title-header">
+        <h2>Videos</h2>
+      </div>
+      <div class="content-block">
+        <div class="col-video">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Videos you should see</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="media-content-main">
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/turmp-macron-tree-medium-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>1:20</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> Cuomo and Lemon joke about dead US-France friendship tree</strong></a> </div>
+            </div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/dallas-crane-collapse-medium-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>0:53</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> See moment crane collapses into building</strong></a> </div>
+            </div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/bill-maher-cuomo-hed-shot-june-10-medium-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>1:18</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> Bill Maher: Political correctness is a cancer</strong></a> </div>
+            </div>
+            <div class="w-full-col"></div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/laura-ingraham-trump-fake-news-medium-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>2:01</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> Fox News host calls Trump statement 'fake news'</strong></a> </div>
+            </div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/slider-img-4.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>1:53</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> Trump critiqued over attire at royal dinner</strong></a> </div>
+            </div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/dennis-day-mouseketeer-medium-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>1:07</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> Body identified as missing Mouseketeer</strong></a> </div>
+            </div>
+            <div class="w-full-col"></div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/gbs-sheep-vodka-restricted-medium-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>2:01</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> What does vodka from a sheep taste like? </strong></a> </div>
+            </div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/sophie-turner-conan-medium-tease.png" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>1:53</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> Actress blames co-star for show mishap</strong></a> </div>
+            </div>
+            <div class="bxequle">
+              <div class="bx-media"> <img src="images/champions-for-change-church-vans-update-medium-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>2:07</span></a> </div>
+              <div class="headline cd-headline-text"> <a href=""><strong> Tyler Perry donates to church after CNN report</strong></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-trending">
+          <div class="page-title"> <a href="" class="d-flex-common justify-title">
+            <p>Trending</p>
+            <span><i class="fa fa-angle-right"></i></span></a> </div>
+          <div class="bxequle">
+            <div class="bx-media"> <img src="images/cody-barlow-pride-truck-large-tease.jpg" alt=""> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i>1:20</span></a> </div>
+            <div class="headline cd-headline-text"> <a href=""><strong> Cuomo and Lemon joke about dead US-France friendship tree</strong></a> </div>
+          </div>
+          <div class="most-popular">
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/weatherman-code-red-alert-joe-crain-small-11.jpg" alt=""></a> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i></span></a> </div>
+              <div class="media-cont"> <a href="#">Meteorologist criticizes TV station on air. It may cost him his job</a> </div>
+            </div>
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/tig-notaro-james-van-der-beek-interview-1-small-11.jpg" alt=""></a> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i></span></a> </div>
+              <div class="media-cont"> <a href="#">Comedian interviewing actor has no idea who he is</a> </div>
+            </div>
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/conan-dana-carvey-small-11.jpg" alt=""></a> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i></span></a> </div>
+              <div class="media-cont"> <a href="#">Comedy legend nails Trump's verbal tics</a> </div>
+            </div>
+            <div class="most-popular-blok d-flex-common">
+              <div class="media-lf"> <a href=""><img src="images/deer-break-in-lufkin-police-department-small-11.jpg" alt=""></a> <a href="" class="show-time"><span><i class="fa fa-play-circle"></i></span></a> </div>
+              <div class="media-cont"> <a href="#">Cops stand down when they see what caused this break-in</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--Photoes album - working on this section  -->
+<section class="photoes-section">
+    <div class= "container">
+        <div class="title-header">
+          <h2>Photoes</h2>
+        </div>     
+        <div class="content-pics">
+            <div class="gallery">
+                <img src="images/slider-img-3.jpg" alt=""> 
+                <img src="images/slider-img-3.jpg" alt=""> 
+                <img src="images/slider-img-3.jpg" alt=""> 
+                <img src="images/slider-img-3.jpg" alt=""> 
+              <!-- links required -->
+            </div>   
+        </div>  
+     </div>      
+</section>
+
+ <!-- paid section -->
+ <section class="Paid-content">
+  <div class="container">
+      <div class="title-header">
+           <h2>Paid Content</h2>
+       </div>
+       <div class="Paid-contant-inner">        
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="slide-box">
+                <a href="">
+                  <div class="media-img"> 
+                      <img src="images/slider-img-1.jpg" alt=""> 
+                   </div>
+                  <h4>Inside the Advances in Human-Computer Interaction Journal</h4>
+                  <p>Journal of Biomedicine and Biotechnology</p>
+                  </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="slide-box">
+                <a href="">
+                  <div class="media-img"> 
+                      <img src="images/slider-img-2.jpg" alt=""> 
+                    </div>
+                    <h4>Do This (Before Bed) & Start Burning Belly Fat !</h4>
+                    <p>Next Tech</p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+              <div class="slide-box">
+                <a href="">
+                  <div class="media-img"> 
+                      <img src="images/slider-img-3.jpg" alt=""> 
+                    </div>
+                    <h4>Jeff Bridges Lists His Tranquil Montecito, California…</h4>
+                    <p>Mansion Global</p>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+              <div class="slide-box">
+                <a href="">
+                  <div class="media-img"> 
+                      <img src="images/slider-img-4.jpg" alt=""> 
+                    </div>
+                    <h4>Customer service automation starts here!</h4>
+                    <p>Jacada</p>
+                    </a>
+                </div>
+            </div>
+         </div>
+       </div>
+    </div>
+</section>  
+
+<!-- 'In Case you Missed It section'-->
+  <section class="ads-section">
+    <div class="container">
+      <div class="title-header">
+        <h2>In case You Missed It </h2>
+      </div>
+      <div class="ads-block-inner">
+        <div class="media-ads">
+          <div class="media-img"> <a href="https://www.cnn.com/"><img src="images/murtaja-qureiris-teaser-large-tease.jpeg" alt=""></a>
+            <div class="cnn-exclusive"> <span class="breaking">CNN Exclusive</span>
+              <div class="news-breaking"> <a href="https://www.cnn.com/"><strong>Saudi Arabia wants to execute another teen</strong></a> </div>
+            </div>
+          </div>
+        </div>
+        <div class="nws-ads">
+          <div class="media-single">
+            <div class="media-img"> <img src="images/india-diaspora-sim-bhullar-tease-restricted-large-tease.jpg" alt="">
+              <div class="cnn-exclusive"> <span class="breaking">World's largest diaspora</span> </div>
+            </div>
+            <div class="headline cd-headline-text"> <a href="https://www.cnn.com/videos/politics/2019/06/11/cuomo-lemon-handoff-dead-trump-macron-tree-sot-cpt-vpx.cnn"><strong> Cuomo and Lemon joke about dead US-France friendship tree</strong></a> </div>
+          </div>
+          <div class="media-single">
+            <div class="media-img"> <img src="images/noa-pothoven-large-tease.jpg" alt=""> </div>
+            <div class="headline cd-headline-text"> <a href="https://www.cnn.com/2019/06/08/europe/noa-pothoven-euthanasia-debate-intl/index.html"><strong> How Dutch teenager's death was misreported</strong></a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+<!--End middle-main contant-->
+
+<!-- Footer starts -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+
+       <div class="1-footer__tools-weather">
+            <div class="1-footer__weather">
+                <a href="https://www.cnn.com/weather" class="weather__footer-link">
+                  <span class="weather__footer-location js-weather__footer-location">Dover, DE</span>
+                  <span class="weather__footer-icon-wrapper js-weather__footer-icon-wrapper">         
+                    <img class="weather__header-icon" src="images/weatherIcon.png" alt="Ptly Cloudy"></span>
+                    <span class="weather__footer-temperature">
+                      <span data-temptype="fahrenheit" fahrenheit="80" class="js-temp">80</span>°</span>
+                  </a>
+            </div>
+        </div>
+
+      <div class="footer-search">
+        <div class="search-area">
+          <form>
+            <input class="input-text" type="text" placeholder="Search CNN...">
+            <button class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-single">
+          <h3><a href="">World</a></h3>
+          <ul>
+            <li><a href="">US</a></li>
+            <li><a href="">Africa</a></li>
+            <li><a href="">Americas</a></li>
+            <li><a href="">Asia</a></li>
+            <li><a href="">Australia</a></li>
+            <li><a href="">China</a></li>
+            <li><a href="">Europe</a></li>
+            <li><a href="">Middle East</a></li>
+            <li><a href="">India</a></li>
+            <li><a href="">UK</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">US Politics</a></h3>
+          <ul>
+            <li><a href="">45</a></li>
+            <li><a href="">Congress</a></li>
+            <li><a href="">Supreme Court</a></li>
+            <li><a href="">Facts First</a></li>
+            <li><a href="">2020 Election</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">Business</a></h3>
+          <ul>
+            <li><a href="">Markets</a></li>
+            <li><a href="">Tech</a></li>
+            <li><a href="">Media</a></li>
+            <li><a href="">Success</a></li>
+            <li><a href="">Perspectives</a></li>
+            <li><a href="">Video</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">entertainment</a></h3>
+          <ul>
+            <li><a href="">Stars</a></li>
+            <li><a href="">Screen</a></li>
+            <li><a href="">Binge</a></li>
+            <li><a href="">Culture</a></li>
+            <li><a href="">Media</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">Tech</a></h3>
+          <ul>
+            <li><a href="">Innovate</a></li>
+            <li><a href="">Gadget</a></li>
+            <li><a href="">Mission: Ahead</a></li>
+            <li><a href="">Upstarts</a></li>
+            <li><a href="">Business Evolved</a></li>
+            <li><a href="">Work Transformed</a></li>
+            <li><a href="">Innovative Cities</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">Sport</a></h3>
+          <ul>
+            <li><a href="">Football</a></li>
+            <li><a href="">Tennis</a></li>
+            <li><a href="">Equestrian</a></li>
+            <li><a href="">Golf</a></li>
+            <li><a href="">Skiing</a></li>
+            <li><a href="">Horse Racing</a></li>
+            <li><a href="">Formula E</a></li>
+            <li><a href="">F1</a></li>
+            <li><a href="">Sailing</a></li>
+            <li><a href="">Rugby</a></li>
+          </ul>
+        </div>
+        <div class="w-full-col"></div>
+        <div class="footer-single">
+          <h3><a href="">travel</a></h3>
+          <ul>
+            <li><a href="">Destinations</a></li>
+            <li><a href="">Food & Drink</a></li>
+            <li><a href="">Play</a></li>
+            <li><a href="">Stay</a></li>
+            <li><a href="">Videos</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">style</a></h3>
+          <ul>
+            <li><a href="">Arts</a></li>
+            <li><a href="">Design</a></li>
+            <li><a href="">Fashion</a></li>
+            <li><a href="">Architecture</a></li>
+            <li><a href="">Luxury</a></li>
+            <li><a href="">Autos</a></li>
+            <li><a href="">Video</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">helth</a></h3>
+          <ul>
+            <li><a href="">Food</a></li>
+            <li><a href="">Fitness</a></li>
+            <li><a href="">Wellness</a></li>
+            <li><a href="">Parenting</a></li>
+            <li><a href="">Live Longer</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">Features</a></h3>
+          <ul>
+            <li><a href="">Freedom Project</a></li>
+            <li><a href="">Impact Your World</a></li>
+            <li><a href="">Inside Africa</a></li>
+            <li><a href="">2 degrees</a></li>
+            <li><a href="">CNN Heroes</a></li>
+            <li><a href="">All Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">Video</a></h3>
+          <ul>
+            <li><a href="">Video news</a></li>
+            <li><a href="">Feature shows</a></li>
+            <li><a href="">HLN</a></li>
+            <li><a href="">TV shows</a></li>
+            <li><a href="">TV schedule</a></li>
+            <li><a href="">Faces of CNN Worldwide</a></li>
+            <li><a href="">CNNVR</a></li>
+          </ul>
+        </div>
+        <div class="footer-single">
+          <h3><a href="">More…</a></h3>
+          <ul>
+            <li><a href="">Weather</a></li>
+            <li><a href="">CNN Profiles</a></li>
+            <li><a href="">Leadership</a></li>
+            <li><a href="">Pressroom</a></li>
+            <li><a href="">Partner sites</a></li>
+            <li><a href="">Work for CNN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="ftr-innner">
+        <div class="footer-logo"> <a href=""><img src="images/footer-logo.jpg" alt="">U.S. Edition +</a> </div>
+      </div>
+      <div class="copyright-main">
+        <div class="copyright-text"> <span class="copyright">©&nbsp;2019&nbsp;Cable&nbsp;News&nbsp;Network. <a class="copyright-links" 
+                         href="#">Turner&nbsp;Broadcasting&nbsp;System,&nbsp;Inc.</a> All&nbsp;Rights&nbsp;Reserved.<br>
+          CNN&nbsp;Sans&nbsp;™&nbsp;&amp;&nbsp;©&nbsp;2016&nbsp;Cable&nbsp;News&nbsp;Network.</span> </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Accessibility & CC</a></li>
+            <li><a href="">AdChoices</a><i class="fa fa-ad"></i></li>
+            <li><a href="">Modern Slavery Act Statement</a></li>
+            <li><a href="">Advertise with us</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">CNN Store</a></li>
+            <li><a href="">Newsletters</a></li>
+            <li><a href="">Transcripts</a></li>
+            <li><a href="">License Footage</a></li>
+            <li><a href="">CNN Newsource</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--End footer-->
+
+<!-- Jquery script for owl.carousel -->
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script>  
+<script src="js/jquery.js"></script>
+<script> 
+// navigation - sub menu with toggel-bar, search-bar, live button
+$(document).ready(function(){
+  jQuery('.toggle-bars> a ').click(function () {
+    jQuery('body').toggleClass('open-menu');
+    jQuery('body').removeClass('country-open');
+    jQuery('body').removeClass('search-open');
+  });
+  jQuery('.toggle-frm> a ').click(function () {
+    jQuery('body').toggleClass('country-open');
+    jQuery('body').removeClass('open-menu');
+    jQuery('body').removeClass('search-open');
+  });
+  
+  jQuery('.toggle-search> a ').click(function () {
+    jQuery('body').toggleClass('search-open');
+    jQuery('body').removeClass('open-menu');
+    jQuery('body').removeClass('country-open');
+  });
+  
+  jQuery('.tgmobile> a ').click(function () {
+    jQuery('body').toggleClass('mob-panel');
+  });
+  // live button click
+  $("button.livebtn").click(function(){
+    document.location = 'https://go.cnn.com/?stream=cnn%3Fsr';
+    return false;
+});
+
+// code for carousel slides
+const $owlCarousel = $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    margin:10,
+    dots:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    nav:true,
+  });
+}); // do not remove by mistake
+
+</script>
+</body>
+</html>
